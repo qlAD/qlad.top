@@ -127,6 +127,15 @@ const App = () => {
                   icon={PaperClipIcon}
                 />
 
+                <CardBtnLink
+                  desc={'publish[1]'}
+                  link={'https://storage.qlad.top'}
+                  content={'storage.qlad.top'}
+                  ping={true}
+                  pingColor={'bg-blue-400'}
+                  icon={PaperClipIcon}
+                />
+
                 <CardBtnCustom
                   desc={'timezone'}
                   icon={ClockIcon}
