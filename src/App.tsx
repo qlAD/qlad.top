@@ -13,9 +13,12 @@ import {
   ChartBarIcon,
   BeakerIcon,
   LibraryIcon,
+  CurrencyYenIcon,
+  CubeIcon,
 } from '@heroicons/react/outline'
 import {
   Alibabacloud,
+  C,
   Cloudflare,
   R,
   Cplusplus,
@@ -35,6 +38,7 @@ import {
   Telegram,
   Twitter,
   Typescript,
+  Vim,
   Vercel,
   Visualstudiocode,
   Vuedotjs,
@@ -89,17 +93,16 @@ const App = () => {
                 <div className="text-2xl md:text-3xl text-neutral-content">I'm qlAD.</div>
                 <img className="w-8 h-8 ml-2 wave" src={wave} alt="wave" />
               </div>
-
               <div className="flex flex-wrap mt-8 gap-2 overflow-hidden">
-              <CardBtnCustom
+                <CardBtnCustom
                   icon={AcademicCapIcon}
-                  desc={'就读.高二'}
+                  desc={'edu.study'}
                   content={
                     <div
                       className="btn btn-sm btn-secondary"
                       onClick={() => {
                         clipboard.copy('南郑县大河坎中学')
-                        toast.success('已复制学校名称')
+                        toast.success('已复制学校名称到剪切板')
                       }}>
                       <div className="tooltip tooltip-bottom flex items-center" data-tip="我们学校好像没有官网">
                         <span>南郑县大河坎中学.高中</span>
@@ -107,23 +110,34 @@ const App = () => {
                     </div>
                   }
                 />
+
+                <CardBtnLink
+                  desc={'edu.member'}
+                  link={'https://tuna.moe/'}
+                  content={'清华大学TUNA协会'}
+                  ping={true}
+                  pingColor={"bg-red-300"}
+                  icon={AcademicCapIcon}
+                />
+
                 <CardBtnLink
                   desc={'edu.dream'}
-                  link={'https://www.bit.edu.cn/'}
-                  content={'Beijing Institute of Technology'}
+                  link={'https://www.bupt.edu.cn/'}
+                  content={'北京邮电大学'}
                   ping={true}
                   pingColor={"bg-purple-400"}
                   icon={AcademicCapIcon}
                 />
+              </div>
 
-                <hr className="border-dashed mt-4" />
-
+              <hr className="border-dashed mt-4" />
+              <div className="flex flex-wrap mt-4 gap-2">
                 <CardBtnLink
-                  desc={'publish[1]'}
+                  desc={'publish[0]'}
                   link={'https://blog.qlad.top'}
                   content={'blog.qlad.top'}
                   ping={true}
-                  pingColor={'bg-blue-400'}
+                  pingColor={'bg-green-300'}
                   icon={PaperClipIcon}
                 />
 
@@ -149,7 +163,7 @@ const App = () => {
                       className="btn btn-sm btn-outline btn-accent"
                       onClick={() => {
                         clipboard.copy('168305666')
-                        toast.success('Copied UID to clipboard.')
+                        toast.success('已复制 UID 到剪切板')
                       }}
                     >
                       <div className="tooltip tooltip-bottom flex items-center" data-tip="原来你也玩原神 🍬">
@@ -163,7 +177,7 @@ const App = () => {
                 <CardBtnIcons
                   desc={'use.lang'}
                   descIcon={CodeIcon}
-                  icons={[Python, Javascript, Typescript, R, Cplusplus, Java, Go]}
+                  icons={[C, Cplusplus, Python, Javascript, Typescript]}
                 />
                 <CardBtnIcons
                   desc={'use.framework'}
@@ -173,7 +187,7 @@ const App = () => {
                 <CardBtnIcons
                   desc={'use.service'}
                   descIcon={ServerIcon}
-                  icons={[Visualstudiocode, Neovim, Jetbrains, Vercel, Cloudflare, Alibabacloud]}
+                  icons={[Visualstudiocode, Vim, Vercel, Cloudflare]}
                 />
               </div>
 
@@ -181,11 +195,8 @@ const App = () => {
 
               <div className="flex flex-wrap mt-4 gap-2">
                 <SocialIcons link={'https://github.com/qlAD'} icon={Github} />
-                <SocialIcons link={'https://twitter.com/realSpencerWoo'} icon={Twitter} />
-                <SocialIcons link={'https://weibo.com/spencerwoo'} icon={Sinaweibo} />
-                <SocialIcons link={'https://t.me/realSpencerWoo'} icon={Telegram} />
-                <SocialIcons link={'https://scholar.google.com/citations?user=Mf-JoyQAAAAJ'} icon={Googlescholar} />
-                <a className="btn btn-sm btn-outline border-white text-white" href="mailto:spencer.wushangbo@gmail.com">
+                <SocialIcons link={'https://t.me/qlAD_Meteor'} icon={Telegram} />
+                <a className="btn btn-sm btn-outline border-white text-white" href="mailto:qlad_adgk@163.com">
                   <MailIcon className="w-5 h-5" />
                 </a>
               </div>
@@ -201,34 +212,36 @@ const App = () => {
           <div className="mt-12 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-2">{projectCards}</div>
 
           <div className="flex items-center">
-            <LibraryIcon className="w-6 h-6" />
-            <span className="text-xl ml-2 font-bold">Publications</span>
+            <CubeIcon className="w-6 h-6" />
+            <span className="text-xl ml-2 font-bold">Environment</span>
           </div>
-          <a
-            href="https://doi.org/10.24963/ijcai.2021/430"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="p-2 rounded shadow bg-base-100 transition transform hover:shadow-md hover:-translate-y-1"
-          >
-            <div className="font-bold">
-              Demiguise Attack: Crafting Invisible Semantic Adversarial Perturbations with Perceptual Similarity
+          <div className="p-2 rounded shadow bg-base-100 transition transform hover:shadow-md hover:-translate-y-1">
+            <div className="text-sm">
+              <span className="font-bold">配置</span>：Arch Linux + Bspwm + Virt Manager + Neovim
             </div>
             <div className="text-sm">
-              Yajie Wang*, <span className="font-bold">Shangbo Wu*</span>, Wenyi Jiang, Shengang Hao, Yu-an Tan, Quanxin
-              Zhang
+            <span className="font-bold">学习</span>：就读于<span className="font-bold"> 南郑县大河坎中学 </span>
             </div>
-            <div className="flex flex-wrap gap-1">
-              <div className="badge badge-primary">IJCAI 2021</div>
-              <div className="badge badge-secondary">Adversarial Attack</div>
-              <div className="badge badge-secondary">Perceptual Similarity</div>
+            <div className="text-sm">
+            <span className="font-bold">成就</span>：2019 年加入<span className="font-bold"> 清华大学TUNA开源协会</span>
             </div>
-          </a>
+          </div>
 
+          <div className="flex items-center">
+            <CurrencyYenIcon className="w-6 h-6" />
+            <span className="text-xl ml-2 font-bold">Sponsor</span>
+          </div>
+          <div className="sponsor">
+            <img src="https://s2.loli.net/2022/04/30/vd7hgLDkpW9j5JU.jpg" />
+            <img src="https://s2.loli.net/2022/04/30/5lQja3Ecm1dAHpw.png" />
+            <img src="https://s2.loli.net/2022/04/30/smGDZFdBR1KJAOH.png" />
+          </div>
           <div className="flex items-center">
             <ChartBarIcon className="w-6 h-6" />
             <span className="text-xl ml-2 font-bold">Stats</span>
           </div>
           <div className="flex flex-wrap gap-1">{socialCards}</div>
+
         </div>
       </div>
 

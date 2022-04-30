@@ -14,11 +14,11 @@ type cardBtnLinkProps = {
 const CardBtnLink = (props: cardBtnLinkProps) => {
   return (
     <div className="flex flex-col space-y-1">
-      <div className="flex items-center text-xs text-base-200">
+      <div className="flex items-center text-sm text-secondary">
         <props.icon className="mr-1 w-4 h-4" />
         <span className="font-mono">{props.desc}</span>
       </div>
-      <a className="btn btn-sm btn-outline btn-accent indicator" href={props.link} target="_blank" rel="noopener noreferrer">
+      <a className="btn btn-sm btn-secondary indicator" href={props.link} target="_blank" rel="noopener noreferrer">
         {props.ping && (
           <span className="indicator-item flex h-3 w-3">
             <span
@@ -27,7 +27,7 @@ const CardBtnLink = (props: cardBtnLinkProps) => {
             <span className={`relative inline-flex rounded-full h-3 w-3 ${props.pingColor}`}></span>
           </span>
         )}
-        <div className="truncate h-3">{props.content}</div>
+        <span className="truncate">{props.content}</span>
       </a>
     </div>
   )
