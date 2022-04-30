@@ -104,7 +104,7 @@ const App = () => {
                         clipboard.copy('南郑县大河坎中学')
                         toast.success('已复制学校名称到剪切板')
                       }}>
-                      <div className="tooltip tooltip-bottom flex items-center" data-tip="我们学校好像没有官网">
+                      <div className="tooltip  flex items-center" data-tip="我们学校好像没有官网 😑">
                         <span>南郑县大河坎中学.高中</span>
                       </div>
                     </div>
@@ -231,11 +231,18 @@ const App = () => {
             <CurrencyYenIcon className="w-6 h-6" />
             <span className="text-xl ml-2 font-bold">Sponsor</span>
           </div>
-          <div className="sponsor">
-            <img src="https://s2.loli.net/2022/04/30/vd7hgLDkpW9j5JU.jpg" />
-            <img src="https://s2.loli.net/2022/04/30/5lQja3Ecm1dAHpw.png" />
-            <img src="https://s2.loli.net/2022/04/30/smGDZFdBR1KJAOH.png" />
+          <div>
+            <a className="sponsor p-1 bg-base-100 transition transform hover:shadow-md hover:-translate-y-1" href="https://s2.loli.net/2022/04/30/vd7hgLDkpW9j5JU.jpg">
+              <img src="https://s2.loli.net/2022/04/30/vd7hgLDkpW9j5JU.jpg" />
+            </a>
+            <a className="sponsor p-1 bg-base-100 transition transform hover:shadow-md hover:-translate-y-1" href='https://s2.loli.net/2022/04/30/5lQja3Ecm1dAHpw.png'>
+              <img src="https://s2.loli.net/2022/04/30/5lQja3Ecm1dAHpw.png" />
+            </a>
+            <a className="sponsor p-1 bg-base-100 transition transform hover:shadow-md hover:-translate-y-1" href='https://s2.loli.net/2022/04/30/smGDZFdBR1KJAOH.png'>
+              <img src="https://s2.loli.net/2022/04/30/smGDZFdBR1KJAOH.png" />
+            </a>
           </div>
+
           <div className="flex items-center">
             <ChartBarIcon className="w-6 h-6" />
             <span className="text-xl ml-2 font-bold">Stats</span>
@@ -247,7 +254,7 @@ const App = () => {
 
       <footer className="w-full text-center my-8">
         <div>
-          Powered by{' '}
+          由{' '}
           <a className="link" href="https://reactjs.org/">
             React
           </a>
@@ -259,12 +266,12 @@ const App = () => {
           <a className="link" href="https://vitejs.dev/">
             Vite
           </a>{' '}
-          and{' '}
+          和{' '}
           <a className="link" href="https://www.typescriptlang.org/">
-            TypeScript.
-          </a>
+            TypeScript
+          </a> 强力驱动
         </div>
-        <div>Spencer Woo © 2019-{currentYear}</div>
+        <div>qlAD 乔从 2019-{currentYear} 陪伴你</div>
       </footer>
     </div>
   )

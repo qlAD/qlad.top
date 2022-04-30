@@ -69,9 +69,13 @@
     transition: opacity 200ms;
 }
 
+.sponsor {
+    height: 100%;
+    width: 32%;
+    margin: 0 2px;
+    float: left;
+}
 .sponsor img {
-  width: 255px;
+  width: 100%;
   height: 100%;
-margin: 0 5px;
-float: left;
 }
