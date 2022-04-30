@@ -162,13 +162,13 @@ const App = () => {
                     <div
                       className="btn btn-sm btn-outline btn-accent"
                       onClick={() => {
-                        clipboard.copy('168305666')
+                        clipboard.copy('204936187')
                         toast.success('已复制 UID 到剪切板')
                       }}
                     >
                       <div className="tooltip tooltip-bottom flex items-center" data-tip="原来你也玩原神 🍬">
                         {/* <img src={paimon} alt="paimon" className="w-5 h-5 mr-1" /> */}
-                        <span>UID: 168305666</span>
+                        <span>UID: 204936187</span>
                       </div>
                     </div>
                   }
