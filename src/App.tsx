@@ -2,7 +2,6 @@ import React from 'react'
 
 import {
   AcademicCapIcon,
-  PencilIcon,
   PaperClipIcon,
   CodeIcon,
   CubeTransparentIcon,
@@ -12,31 +11,21 @@ import {
   PuzzleIcon,
   ChartBarIcon,
   BeakerIcon,
-  LibraryIcon,
   CurrencyYenIcon,
   CubeIcon,
 } from '@heroicons/react/outline'
 import {
-  Alibabacloud,
   C,
   Cloudflare,
-  R,
   Cplusplus,
   Github,
-  Go,
-  Googlescholar,
-  Java,
   Javascript,
-  Jetbrains,
-  Neovim,
   Nextdotjs,
   Python,
   Pytorch,
   ReactJs,
-  Sinaweibo,
   Tailwindcss,
   Telegram,
-  Twitter,
   Typescript,
   Vim,
   Vercel,
@@ -58,7 +47,6 @@ import ProjectCard from './components/ProjectCard'
 
 import avatar from './assets/avatar.png'
 import wave from './assets/wave.png'
-import paimon from './assets/genshin-impact.svg'
 
 const socialCards = socials.map(s => (
   <SocialCard key={s.name} name={s.name} link={s.link} icon={s.icon} apiUrl={s.apiUrl} color={s.color} />
@@ -105,7 +93,7 @@ const App = () => {
                         toast.success('已复制学校名称到剪切板')
                       }}>
                       <div className="tooltip  flex items-center" data-tip="我们学校好像没有官网 😑">
-                        <span>南郑县大河坎中学.高中</span>
+                        <span>刚高考完毕 - 准大一</span>
                       </div>
                     </div>
                   }
@@ -135,7 +123,7 @@ const App = () => {
                 <CardBtnLink
                   desc={'publish[0]'}
                   link={'https://blog.qlad.top'}
-                  content={'blog.qlad.top'}
+                  content={'我的 [博客] 网站'}
                   ping={true}
                   pingColor={'bg-green-300'}
                   icon={PaperClipIcon}
@@ -144,7 +132,7 @@ const App = () => {
                 <CardBtnLink
                   desc={'publish[1]'}
                   link={'https://storage.qlad.top'}
-                  content={'storage.qlad.top'}
+                  content={'我的 [共享] 网盘'}
                   ping={true}
                   pingColor={'bg-blue-400'}
                   icon={PaperClipIcon}
@@ -182,7 +170,7 @@ const App = () => {
                 <CardBtnIcons
                   desc={'use.framework'}
                   descIcon={CubeTransparentIcon}
-                  icons={[Pytorch, ReactJs, Nextdotjs, Vuedotjs, Tailwindcss]}
+                  icons={[ReactJs, Nextdotjs, Vuedotjs, Tailwindcss]}
                 />
                 <CardBtnIcons
                   desc={'use.service'}
@@ -195,7 +183,7 @@ const App = () => {
 
               <div className="flex flex-wrap mt-4 gap-2">
                 <SocialIcons link={'https://github.com/qlAD'} icon={Github} />
-                <SocialIcons link={'https://t.me/qlAD_Meteor'} icon={Telegram} />
+                <SocialIcons link={'https://t.me/qlAD_404'} icon={Telegram} />
                 <a className="btn btn-sm btn-outline border-white text-white" href="mailto:qlad_adgk@163.com">
                   <MailIcon className="w-5 h-5" />
                 </a>
@@ -217,13 +205,16 @@ const App = () => {
           </div>
           <div className="p-2 rounded shadow bg-base-100 transition transform hover:shadow-md hover:-translate-y-1">
             <div className="text-sm">
-              <span className="font-bold">配置</span>：Arch Linux + Bspwm + Virt Manager + Neovim
+              <span className="font-bold">配置</span>
+              ：Gentoo Linux + Bspwm + Neovim
             </div>
             <div className="text-sm">
-            <span className="font-bold">学习</span>：就读于<span className="font-bold"> 南郑县大河坎中学 </span>
+            <span className="font-bold">学习</span>
+            ：2023 顺利毕业，<span className="font-bold"> 准大一新生 </span>
             </div>
             <div className="text-sm">
-            <span className="font-bold">成就</span>：2019 年加入<span className="font-bold"> 清华大学TUNA开源协会</span>
+            <span className="font-bold">成就</span>
+            ：2019 年加入<span className="font-bold"> 清华大学TUNA开源协会</span>
             </div>
           </div>
 
